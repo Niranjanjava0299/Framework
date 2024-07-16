@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ 	<!--  <listeners>
+		<listener name = "com.niranjan.automation.listeners.ReRunFailedTCS"> </listener>
+	</listeners> -->
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.niranjan.automation.businessscripts.FbTest"/>
+      <class name="com.niranjan.automation.businessscripts.GmailTest"/>
+      <class name="com.niranjan.automation.businessscripts.FcTest"/>
+      <class name="com.niranjan.automation.businessscripts.InstaTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
