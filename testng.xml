@@ -6,10 +6,11 @@
 	</listeners> -->
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.niranjan.automation.businessscripts.FbTest"/>
+		<class name="com.niranjan.automation.businessscripts.OpenCartTest"/>
+      <!-- <class name="com.niranjan.automation.businessscripts.FbTest"/>
       <class name="com.niranjan.automation.businessscripts.GmailTest"/>
       <class name="com.niranjan.automation.businessscripts.FcTest"/>
-      <class name="com.niranjan.automation.businessscripts.InstaTest"/>
-    </classes>
+      <class name="com.niranjan.automation.businessscripts.InstaTest"/> -->
+   </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -44,6 +44,43 @@ import com.relevantcodes.extentreports.LogStatus;
 		
 	}
 	
+	public static String getTitlePage() // opencart
+	{
+		String title ="";
+		try {
+			
+			 title = getDriver().getTitle();
+			getExtentTest().log(LogStatus.PASS, "Title is :"+title);
+		}
+		catch(Exception exception){
+			getExtentTest().log(LogStatus.FAIL, "Title is not :"+title);
+		}
+		return title;
+	}
+	
+	public static void verifyTitleOfThePage(String expValue) // opencart
+	{
+		String title = getTitlePage();
+		if (title.equalsIgnoreCase(expValue)) {
+			getExtentTest().log(LogStatus.PASS, "Title is matching ="+title+" = "+expValue);
+		}
+		else {
+			getExtentTest().log(LogStatus.FAIL, "Title is  Not matching ="+title+" = "+expValue);
+		}
+	}
+	
+	public static void getTextOfWebElement(WebElement webElement) //opencart
+	{
+        
+		try {
+			String txt = webElement.getText();
+		}
+		catch(Exception exception){
+			System.out.println("text is not provided ");
+		}
+		
+	}
+	
 	public static void navigateUrl(String url) // dout
 	{
 
